@@ -1,5 +1,5 @@
 // Login demo sisi browser, bukan autentikasi aman untuk data sensitif.
-const AUTH_USER="admin", AUTH_PASS="FufuratuVIP2026!";
+const AUTH_USER="admin", AUTH_PASS="admin";
 function showApp(){$("loginScreen").hidden=true;document.body.classList.remove("logged-out")}
 function showLogin(){$("loginScreen").hidden=false;document.body.classList.add("logged-out")}
 $("loginForm").addEventListener("submit",e=>{e.preventDefault();if($("loginUsername").value.trim()===AUTH_USER&&$("loginPassword").value===AUTH_PASS){sessionStorage.setItem("fufuratuVipLoggedIn","yes");$("loginError").textContent="";showApp()}else{$("loginError").textContent="Username atau kata sandi salah."}});
